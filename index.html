@@ -21,23 +21,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-934BW41XZS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-934BW41XZS');
-      
-      // Función para seguimiento de eventos
-      function trackEvent(category, action, label) {
-        gtag('event', action, {
-          'event_category': category,
-          'event_label': label
-        });
-        console.log(`Analytics: ${category} - ${action} - ${label}`); // Para depuración
-      }
-    </script>
 
     <!-- Tipografía Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -75,6 +58,24 @@
       }
     </style>
   </head>
+  
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-934BW41XZS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-934BW41XZS');
+      
+      // Función para seguimiento de eventos
+      function trackEvent(category, action, label) {
+        gtag('event', action, {
+          'event_category': category,
+          'event_label': label
+        });
+        console.log(`Analytics: ${category} - ${action} - ${label}`); // Para depuración
+      }
+    </script>
   <body class="bg-gray-100 text-gray-800 antialiased">
     <!-- HERO -------------------------------------------------------------------- -->
     <header class="relative h-screen sm:h-[85vh] flex items-center justify-center overflow-hidden">
