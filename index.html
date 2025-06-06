@@ -6,6 +6,16 @@
     <meta name="theme-color" content="#2563eb" />
     <title> KAWASAKI 650 2023</title>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-934BW41XZS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-934BW41XZS');
+    </script>
+
     <!-- Tailwind CDN (build‑free) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -58,24 +68,6 @@
       }
     </style>
   </head>
-  
-    <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-934BW41XZS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-934BW41XZS');
-      
-      // Función para seguimiento de eventos
-      function trackEvent(category, action, label) {
-        gtag('event', action, {
-          'event_category': category,
-          'event_label': label
-        });
-        console.log(`Analytics: ${category} - ${action} - ${label}`); // Para depuración
-      }
-    </script>
   <body class="bg-gray-100 text-gray-800 antialiased">
     <!-- HERO -------------------------------------------------------------------- -->
     <header class="relative h-screen sm:h-[85vh] flex items-center justify-center overflow-hidden">
@@ -94,7 +86,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
       </a>
     </header>
-
+    
     <!-- HISTORIA ----------------------------------------------------------------- -->
     <section id="historia" class="max-w-5xl mx-auto py-14 px-4">
       <h2 class="text-3xl font-semibold mb-10 text-center" data-aos="fade-up">Historia</h2>
