@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2563eb" />
+    <title> KAWASAKI 650 2023</title>
+
+    <!-- Tailwind CDN (build‑free) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper (galería táctil) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- PhotoSphereViewer (360°) -->
+    <link rel="stylesheet" href="https://unpkg.com/photosphere-viewer@5/dist/photosphere-viewer.css" />
+    <script defer src="https://unpkg.com/three@0.157.0/build/three.min.js"></script>
+    <script defer src="https://unpkg.com/photosphere-viewer@5/dist/photosphere-viewer.js"></script>
+
+    <!-- GLightbox (lightbox ligero) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- AOS (animaciones al hacer scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Tipografía Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      /* Estilo para los elementos de la lista en la sección Historia */
+      #historia ol li {
+        margin-bottom: 2rem; /* Incrementa el espacio entre los elementos */
+        padding-left: 1.5rem; /* Añade espacio interno para el contenido */
+        position: relative;
+      }
+
+      #historia ol li span {
+        left: -2rem; /* Mover los puntos más a la izquierda */
+        width: 1.5rem;
+        height: 1.5rem;
+        background: linear-gradient(135deg, #2563eb, #1e40af); /* Gradiente atractivo */
+        box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+      }
+
+      #historia ol li h3 {
+        font-size: 1.25rem; /* Tamaño de fuente más grande */
+        color: #1e3a8a; /* Azul oscuro para el título */
+      }
+
+      #historia ol li p {
+        font-size: 1rem; /* Tamaño de fuente estándar */
+        color: #4b5563; /* Gris oscuro para el texto */
+        line-height: 1.6; /* Mejor legibilidad */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800 antialiased">
+    <!-- HERO -------------------------------------------------------------------- -->
+    <header class="relative h-screen sm:h-[85vh] flex items-center justify-center overflow-hidden">
+      <img src="img/IMG_0047.JPG" alt="{{MODELO}}" class="absolute inset-0 h-full w-full object-cover object-center" />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/70 to-black/40"></div>
+      <div class="relative z-10 px-6 text-center" data-aos="fade-up">
+        <span class="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium tracking-wide mb-4">EXCLUSIVA</span>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white drop-shadow-md">KAWASAKI 650 <span class="whitespace-nowrap">2023</span></h1>
+        <p class="text-lg sm:text-xl text-gray-200 mt-3 max-w-md mx-auto">Importada • Titular y pedimento • Lista para rodar</p>
+        <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#historia" class="bg-white/90 hover:bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow transition">Ver historia</a>
+          <a href="#contacto" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition">Contactar ahora</a>
+        </div>
+      </div>
+      <a href="#historia" class="absolute bottom-10 left-0 right-0 mx-auto w-12 h-12 flex items-center justify-center text-white animate-bounce">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+      </a>
+    </header>
+
+    <!-- HISTORIA ----------------------------------------------------------------- -->
+    <section id="historia" class="max-w-5xl mx-auto py-14 px-4">
+      <h2 class="text-3xl font-semibold mb-10 text-center" data-aos="fade-up">La historia</h2>
+      <ol class="relative border-l-2 border-gray-300 ml-4 space-y-12">
+        <li class="ml-6" data-aos="fade-right" data-aos-delay="100">
+          <span class="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 ring-4 ring-white"></span>
+          <h3 class="font-semibold">Fabricación – {{AÑO}}</h3>
+          <p class="text-gray-600 mt-2">Ensamblada en Japón, cuidado de showroom por un solo propietario.</p>
+        </li>
+        <li class="ml-6" data-aos="fade-right" data-aos-delay="200">
+          <span class="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 ring-4 ring-white"></span>
+          <h3 class="font-semibold">Llegada a México</h3>
+          <p class="text-gray-600 mt-2">Legalizada en 20XX bajo NOM‑001; todos los documentos originales.</p>
+        </li>
+        <li class="ml-6" data-aos="fade-right" data-aos-delay="300">
+          <span class="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-600 ring-4 ring-white"></span>
+          <h3 class="font-semibold">Restauración 2024</h3>
+          <p class="text-gray-600 mt-2">Afinación completa, llantas 80 %, frenos y cadena nuevos.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 360 VIEWER ---------------------------------------------------------------- -->
+    <section class="bg-white py-14">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-semibold mb-6 text-center" data-aos="fade-up">Explórala a 360°</h2>
+        <div id="viewer360" class="w-full h-72 sm:h-96 md:h-[60vh] rounded-xl shadow-lg overflow-hidden"></div>
+      </div>
+    </section>
+
+    <!-- GALERÍA SWIPER ----------------------------------------------------------- -->
+    <section class="max-w-6xl mx-auto py-14 px-4">
+      <h2 class="text-3xl font-semibold mb-8 text-center" data-aos="fade-up">Detalles en alta resolución</h2>
+      <!-- Slider main container -->
+      <div class="swiper" data-aos="fade-up" data-aos-delay="100">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides (reemplaza las rutas) -->
+          <div class="swiper-slide"><a href="img/IMG_0049.JPG" class="glightbox"><img src="img/IMG_0049.JPG" alt="Detalle 1" class="w-full h-60 sm:h-72 object-cover rounded-lg" /></a></div>
+          <div class="swiper-slide"><a href="img/IMG_0052.JPG" class="glightbox"><img src="img/IMG_0052.JPG" alt="Detalle 2" class="w-full h-60 sm:h-72 object-cover rounded-lg" /></a></div>
+          <div class="swiper-slide"><a href="img/IMG_0053(1).jpg" class="glightbox"><img src="img/IMG_0053(1).jpg" alt="Detalle 3" class="w-full h-60 sm:h-72 object-cover rounded-lg" /></a></div>
+          <div class="swiper-slide"><a href="img/IMG_0055.JPG" class="glightbox"><img src="img/IMG_0055.JPG" alt="Detalle 4" class="w-full h-60 sm:h-72 object-cover rounded-lg" /></a></div>
+          <div class="swiper-slide"><a href="img/IMG_0064.JPG" class="glightbox"><img src="img/IMG_0064.JPG" alt="Detalle 5" class="w-full h-60 sm:h-72 object-cover rounded-lg" /></a></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination !bottom-0"></div>
+      </div>
+    </section>
+
+    <!-- FICHA TÉCNICA ------------------------------------------------------------- -->
+    <section class="bg-white py-14">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-semibold mb-8 text-center" data-aos="fade-up">Especificaciones clave</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 text-gray-700" data-aos="fade-up" data-aos-delay="100">
+          <div><span class="font-medium">Cilindrada:</span> 650 cc</div>
+          <div><span class="font-medium">Kilometraje:</span> 18 000 km</div>
+          <div><span class="font-medium">Potencia:</span> 68 hp</div>
+          <div><span class="font-medium">Combustible:</span> Premium</div>
+          <div><span class="font-medium">Frenos:</span> ABS</div>
+          <div><span class="font-medium">Color:</span> Negro mate</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA ----------------------------------------------------------------------- -->
+    <section id="contacto" class="py-14 bg-gradient-to-r from-blue-600 to-indigo-700 text-white text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-5" data-aos="zoom-in">¿Listo para una prueba de manejo?</h2>
+      <p class="max-w-xl mx-auto mb-8" data-aos="zoom-in" data-aos-delay="100">Envíame un WhatsApp y agenda hoy mismo. ¡La moto te espera!</p>
+      <a href="https://wa.me/525574782688" target="_blank" class="inline-block bg-white/90 text-blue-700 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-white" data-aos="zoom-in" data-aos-delay="200">Enviar WhatsApp</a>
+    </section>
+
+    <!-- FOOTER -------------------------------------------------------------------- -->
+    <footer class="py-6 text-center text-sm text-gray-500 bg-gray-100">© 2025 Albert – CDMX</footer>
+
+    <!-- JS Inicializaciones -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // AOS init
+        AOS.init({ once: true, duration: 800 });
+
+        // Swiper init
+        new Swiper('.swiper', {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+          centeredSlides: true,
+          loop: true,
+          breakpoints: {
+            640: { slidesPerView: 2.2 },
+            1024: { slidesPerView: 3.2 }
+          },
+          pagination: { el: '.swiper-pagination', clickable: true }
+        });
+
+        // GLightbox init
+        GLightbox({ selector: '.glightbox' });
+
+        // PhotoSphereViewer init
+        const viewer = new PhotoSphereViewer.Viewer({
+          container: document.querySelector('#viewer360'),
+          panorama: 'img/IMG_0066.JPG', // reemplaza con tu equirectangular 2:1
+          loadingImg: 'img/loader.gif',
+          navbar: ['zoom', 'fullscreen'],
+          defaultLong: Math.PI
+        });
+      });
+    </script>
+  </body>
+</html>
