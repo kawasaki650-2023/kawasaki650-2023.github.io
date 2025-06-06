@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+      
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-934BW41XZS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-934BW41XZS');
+      
+      // Función para seguimiento de eventos
+      function trackEvent(category, action, label) {
+        gtag('event', action, {
+          'event_category': category,
+          'event_label': label
+        });
+        console.log(`Analytics: ${category} - ${action} - ${label}`); // Para depuración
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#2563eb" />
@@ -58,24 +76,7 @@
       }
     </style>
   </head>
-  
-    <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-934BW41XZS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-934BW41XZS');
-      
-      // Función para seguimiento de eventos
-      function trackEvent(category, action, label) {
-        gtag('event', action, {
-          'event_category': category,
-          'event_label': label
-        });
-        console.log(`Analytics: ${category} - ${action} - ${label}`); // Para depuración
-      }
-    </script>
+
   <body class="bg-gray-100 text-gray-800 antialiased">
     <!-- HERO -------------------------------------------------------------------- -->
     <header class="relative h-screen sm:h-[85vh] flex items-center justify-center overflow-hidden">
